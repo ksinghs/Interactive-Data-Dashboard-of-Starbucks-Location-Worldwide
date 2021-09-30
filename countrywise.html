@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+
+<head>
+    <link rel="stylesheet" href="styles.css?version=1">
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+    <script type="application/javascript" src="scripts.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="Starbucks-Project">
+            <h1>Interactive Data Dashboard of Starbucks Location Worldwide</h1>
+            <a href="index.html" style="float: right; margin-right: 15%;">Global Stats</a>
+        </div>
+
+        <div class="Choose-Country">
+            Select Country: <select id="country"></select> &emsp;
+            Toggle sort<input type="checkbox" id="sort">
+
+        </div>
+
+        <div class="Barchart">
+            <svg id="chart" height="500" width="550" style="margin-left:10%"></svg>
+
+        </div>
+
+        <div class="Info">
+            <div style="width: 50%; display: inline-block; margin-top: 5%; ">
+                <p style="color: teal; font-size: x-larger; font-weight: bolder; float:right">
+                    <span style="color: white; background-color: teal;">
+                        &ensp; Countrywise Starbucks Statistics &ensp;</span> <br> <br>
+                    No. of Starbucks: <span id="infodata"></span><br> <br>
+                    No. of States: <span id="infodata2"></span><br> <br>
+
+
+                </p>
+            </div>
+
+            <div style="width: 50%; float:right; margin-top: 5%; ">
+
+                <img style=" height: 100%; width: 170px; object-fit: contain; margin-right:80px;"
+                    src="assets/download.jpg">
+            </div>
+        </div>
+
+        <div class="Donutchart">
+            <div style="width: 50%; display: inline-block; margin-top: 5%; ">
+                <svg id="donut-chart" style="float: right; margin-right:5%;"></svg>
+            </div>
+            <div style="width: 50%; float:right; margin-top: 5%; "><svg id="legend"
+                    style="float: left; margin-right: 30px; margin-top: 80px;margin-left:5% "></svg>
+            </div>
+
+        </div>
+        <div class="Filter-state-and-search">
+            Select State:
+            <select id="state"></select> <br> <br>
+
+        </div>
+        <div class="Tabular-Data" style="margin-right: 5%; margin-left: 5%; text-align: center;">
+            <table id="Table_Data">
+
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

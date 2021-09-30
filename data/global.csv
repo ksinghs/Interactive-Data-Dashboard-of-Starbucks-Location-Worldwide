@@ -1,0 +1,74 @@
+﻿Country,Company_Owned,Franchise,Joint_Venture,Licensed,Total_category
+Andorra,0,0,0,1,Lowest
+UAE,0,0,0,144,Medium-I
+Argentina,0,0,1,107,Medium-I
+Austria,17,0,0,1,Low
+Australia,0,0,0,22,Medium-III
+Aruba,0,0,0,3,Lowest
+Azerbaijan,0,0,0,4,Lowest
+Belgium,0,0,0,19,Low
+Bulgaria,0,0,0,5,Lower
+Bahrain,0,0,0,21,Medium-III
+Brunei Darussalam,0,0,0,5,Lower
+Bolivia,0,0,0,4,Lowest
+Brazil,102,0,0,0,Medium-I
+Bahamas,0,0,0,10,Lower
+Canada,1097,0,0,371,Highest
+Switzerland,57,0,0,4,Medium-II
+Chile,0,0,0,96,Medium-II
+China,1339,0,1220,175,Highest
+Colombia,0,0,0,11,Low
+Costa Rica,0,0,0,11,Low
+Curaçao,0,0,0,3,Lowest
+Cyprus,0,0,0,10,Lower
+Czech Repulic,0,0,28,0,Medium-III
+Germany,142,0,0,18,Medium-I
+Denmark,0,0,0,21,Medium-III
+Egypt,0,0,0,31,Medium-III
+Spain,0,0,0,101,Medium-I
+Finland,0,0,0,8,Lower
+France,74,15,0,43,Medium-I
+Great Britan,347,302,0,252,Highest
+Greece,0,0,0,28,Medium-III
+Guatemala,0,0,0,7,Lower
+Hungary,0,0,16,0,Low
+Indonesia,0,0,0,268,High
+Ireland,0,0,0,73,Medium-II
+India,0,0,88,0,Medium-II
+Jordan,0,0,0,17,Low
+Japan,101,0,1070,66,Highest
+Combodia,0,0,0,4,Lowest
+South Korea,0,0,993,0,Highest
+Kuwait,0,0,0,106,Medium-I
+Kazaksthan,0,0,0,8,Lower
+Lebnan,0,0,0,29,Medium-III
+Luxembourg,0,0,0,2,Lowest
+Morocco,0,0,0,9,Lower
+Monaco,0,0,0,2,Lowest
+Mexico,0,0,0,579,High
+Malaysia,0,0,6,228,High
+Netherlands,10,0,0,49,Medium-II
+Norway,0,0,0,17,Low
+Newzeland,0,0,0,24,Medium-III
+Oman,0,0,0,12,Low
+Panama,0,0,0,5,Lower
+Peru,0,0,0,89,Medium-II
+Philippines,0,0,0,298,High
+Poland,0,0,53,0,Medium-II
+Proto Rueico,1,0,0,23,Medium-III
+Portugal,0,0,0,11,Low
+Qatar,0,0,0,18,Low
+Romania,0,0,0,27,Medium-III
+Russia,0,0,107,2,Medium-I
+South Africa,0,0,0,102,Medium-I
+Sweden,0,0,0,18,Low
+Singapore,130,0,0,0,Medium-I
+Slovakia,0,0,0,3,Lowest
+Salvador,0,0,0,11,Low
+Thiland,289,0,0,0,High
+Turkey,0,0,0,326,High
+Trinidad and Tobago,0,0,0,3,Lowest
+Taiwan,0,0,394,0,High
+USA,8226,0,0,5382,Highest
+Vietnam,0,0,0,25,Medium-III
+Zambia,0,0,0,3,Lowest

@@ -1,0 +1,126 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 0.5fr 0.2fr min-content min-content 0.5fr 1.5fr;
+    gap: 0.5% 0.5%;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Starbucks-Project Starbucks-Project"
+      "Choose-Country Choose-Country"
+      "Barchart Info"
+      "Barchart Donutchart"
+      "Filter-state-and-search Filter-state-and-search"
+      "Tabular-Data Tabular-Data";
+    position: relative;
+  }
+  
+  .Starbucks-Project { grid-area: Starbucks-Project; text-align: center; } 
+  
+  .Choose-Country { grid-area: Choose-Country; display: flex;
+  justify-content: center;
+  align-items: center; }
+  
+  .Barchart { grid-area: Barchart; display: inline-block; }
+  
+  .Info { grid-area: Info; }
+  
+  .Donutchart { grid-area: Donutchart; }
+  
+  .Filter-state-and-search { grid-area: Filter-state-and-search; text-align: center; }
+  
+  .Tabular-Data { grid-area: Tabular-Data; overflow-y: auto; height: 206px; }
+  
+  .Tabular-Data thead th {
+    position: sticky;
+    top: 0;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th,
+  td {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+  }
+  th {
+    background: #eee;
+  }
+
+  .containers {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: 0.5fr auto auto;
+    gap: 0.5% 0.5%;
+    grid-template-areas:
+      "headings headings"
+      "maps bars"
+      "infos bubble";
+      
+  }
+  
+  .headings { grid-area: headings; text-align: center; }
+
+  .maps { grid-area: maps;}
+  
+  .bars { grid-area: bars; }
+  
+  .infos { grid-area: infos; width: 100%; background-color: grey;}
+  
+  .bubble { grid-area: bubble; }
+  
+  
+  
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
+
+  #map {
+    height: 350px;
+    width: 550px;
+    margin-top: 5%;
+    margin-left:10%;
+  }
+
+/*Map grid style*/
+
+.mycluster {
+  width: 40px;
+  height: 40px;
+  background-color: greenyellow;
+  text-align: center;
+  font-size: 24px;
+}
+
+.leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
+-webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;
+-moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s ease-in;
+-o-transition: -o-transform 0.3s ease-out, opacity 0.3s ease-in;
+transition: transform 0.3s ease-out, opacity 0.3s ease-in;
+}
+
+.leaflet-cluster-spider-leg {
+/* stroke-dashoffset (duration and function) should match with leaflet-marker-icon transform in order to track it exactly */
+-webkit-transition: -webkit-stroke-dashoffset 0.3s ease-out, -webkit-stroke-opacity 0.3s ease-in;
+-moz-transition: -moz-stroke-dashoffset 0.3s ease-out, -moz-stroke-opacity 0.3s ease-in;
+-o-transition: -o-stroke-dashoffset 0.3s ease-out, -o-stroke-opacity 0.3s ease-in;
+transition: stroke-dashoffset 0.3s ease-out, stroke-opacity 0.3s ease-in;
+}
+
+
+.tooltip {
+  position: absolute;
+  visibility: hidden;
+  background-color: greenyellow;
+  display: flex;
+  font-family: sans-serif;
+  max-width: fit-content;
+}
+
+  
+circle {
+  cursor: pointer;
+}
+    

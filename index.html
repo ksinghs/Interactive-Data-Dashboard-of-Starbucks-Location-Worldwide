@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>DV Final Project</title>
+    <link rel="stylesheet" href="styles.css?version=1">
+    <script src="https://d3js.org/d3.v4.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.1.0/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.1.0/dist/MarkerCluster.Default.css" />
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.1.0/dist/leaflet.markercluster.js"></script>
+    <script src="https://unpkg.com/leaflet.featuregroup.subgroup@1.0.2/dist/leaflet.featuregroup.subgroup.js"></script>
+
+</head>
+
+<body>
+
+    <div class="containers">
+        <div class="headings">
+            <h1>Interactive Data Dashboard of Starbucks Location Worldwide</h1>
+            <a href="countrywise.html" style="float: right; margin-right: 5%;">CountryWise Stats</a>
+        </div>
+
+        <div class="maps">
+            <div id="map"></div>
+        </div>
+
+        <div class="Bar">
+
+            <div id="radio" style="float: top; margin-top:5%;  margin-right: 20%;">
+
+                No.of Starbucks: <select id="starbucks">
+
+                    <option value="Highest"> High[> 900]</option>
+                    <option value="High"> High [200 to 900]</option>
+                    <option value="Medium-I"> Med [100 to 200]</option>
+                    <option value="Medium-II"> Med [50 to 100]</option>
+                    <option value="Medium-III"> Med [20 to 50]</option>
+                    <option value="Low"> Low [10 to 20]</option>
+                    <option value="Lower"> Low [5 to 10]</option>
+                    <option value="Lowest"> Low [1 to 5]</option>
+
+                </select> &emsp;
+                Toggle sort<input type="checkbox" id="sort">
+
+            </div>
+            <div style="display: flex;">
+                <svg id="BarChart" height="350" width="600" style=" margin-right: 10%;">
+                </svg>
+                <svg id="legends" style="margin-top: 15%;"></svg>
+            </div>
+
+
+
+        </div>
+
+        <div class="Infos">
+
+            <div style="width: 40%; display: inline-block; ">
+                <img src="assets/starbucks.jpg" style="width: 70%; height: 75%; margin-top: 30%; float:right">
+            </div>
+
+            <div style="width: 60%; float:right; margin-top: 9%; ">
+                <p style="color: teal; " style="font-weight: bold;">
+                    <span style="color: white; background-color: teal; font-size: larger; font-weight: bolder;">
+                        &ensp; Worldwide Starbucks Statistics &ensp;</span> <br>
+                    Total Starbucks: 25,600 <br>
+                    Total Countries: 73 <br>
+                    Top Country: US [53% i.e. 13,608] <br>
+                    Top 3 Country : US, China, Canada<br> <br>
+
+                    <span style="color: white; background-color: teal; font-size: medium; font-weight: bold;">
+                        &emsp; &emsp;&ensp; Selected Category Statistics &emsp; &emsp;&ensp;</span> <br>
+
+                    Category: <span id="Svalue1"></span><br>
+                    Total Count: <span id="Svalue2"></span><br>
+                    % of Toal : <span id="Svalue3"></span><br>
+                    <span style="background-color: teal; ">
+                        &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+                        &emsp;&emsp; &emsp; &ensp;</span> <br>
+
+                </p>
+
+            </div>
+
+        </div>
+        <div class="bubble">
+            <svg id="bubble-chart"></svg>
+            <div class="tooltip">
+            </div>
+
+        </div>
+    </div>
+
+
+    <script type="application/javascript" src="final.js?version=1"></script>
+
+
+
+</body>
+
+</html>
